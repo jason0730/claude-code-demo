@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: api-server-config
+  namespace: api-server
+data:
+  SERVER_HOST: "0.0.0.0"
+  SERVER_PORT: "8080"
+  JWT_EXPIRATION: "15m"
+  REFRESH_EXPIRATION: "168h"
+  LOG_LEVEL: "info"
+  LOG_FORMAT: "json"
